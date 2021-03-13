@@ -1,0 +1,226 @@
+
+/* box  */
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* end of box  */
+/* nav  */
+ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+ul li{
+     flex: 1 0 auto;
+     text-align: center;
+     list-style-type: none;
+     background-color: #CED0CE;
+ }
+li a{
+     text-decoration: none !important;
+    display: block;
+    padding: 5px;
+    color: #2D3142;
+ }
+li a:hover{
+     color: whitesmoke;
+     background-color: #F15025;
+     color: #2d3142;
+ }
+ 
+/* end of nav  */
+body{
+    font-family: 'Indie Flower' cursive;
+}
+header{
+    height: 100vh;
+    background: url('Image/spa/spa-composition-with-body-care-items-light-wall_169016-5923.jpg') fixed;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-center{
+    height: 100vh;
+    color: rgba(100, 100, 100, 0.589);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 75px;
+}
+
+.banner-center h1{
+    font-size: 150px;
+}
+
+.banner-underline{
+    width: 300px;
+    border: 3px solid #F15025;
+    margin: 0px auto 40px auto;
+}
+
+.btn-holder{
+    display: flex;
+    justify-content: center;
+}
+.white-btn,
+.navy-btn{
+    color: whitesmoke;
+    font-size: 30px;
+    margin: 0 30px;
+    text-decoration: none !important;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+.navy-btn{
+    border: 3px solid #353531;
+    background-color: #203142;
+}
+.white-btn{
+    border: 3px solid whitesmoke;
+}
+.white-btn:hover,
+.navy-btn:focus{
+    color: #F15025;
+    background-color: whitesmoke;
+}
+/* end of banner  */
+/* title  */
+.title{
+    margin: 20px 0 40px 0;
+}
+.title-underline{
+    width: 150px;
+    border:  3px solid #F15025;
+    margin: 0px auto 10px auto;
+}
+/* end of title  */
+
+/* Qualities section  */
+
+#qualities {
+    background-color: #CED0CE ;
+    padding: 40px;
+}
+#qualities .fa{
+    font-size: 100px;
+    color: #F15025;
+    margin-bottom: 10px;
+}
+#qualities h2{
+    margin-bottom: 20px;
+}
+/*  End of Qualities section  */
+/* project section */
+#projects{
+    padding: 20px 0 0 0;
+    background-color: #2D3142;
+    color: whitesmoke;
+}
+.left{
+    padding-left: 0 ;
+}
+.right{
+    padding-right: 0;
+}
+/* end of project section  */
+/* contact  */
+#contact {
+    padding: 40px;
+    background-color: whitesmoke;
+}
+#contact .form-control{
+    border-radius: 0;
+    font-size: 20px;
+}
+#contact button{
+    background-color: #353531;
+    font-size: 24px;
+    color: #F15025;
+    margin-bottom: 20px;
+}
+#contact button:hover{
+    background-color: #CED0CE;
+    
+}
+/* end of contact  */
+/* footer  */
+#footer{
+    padding: 40px;
+    background-color: #353531;
+
+}
+#footer h2{
+    margin-bottom: 20px;
+
+}
+#footer p{
+    font-size: 20px;
+}
+
+#footer .website a{
+    text-decoration: none !important;
+    color: #F15025;
+    font-size: 20px;
+}
+#footer .website a:hover{
+    color: #CED0CE;
+
+}
+#footer hr{
+    background-color: whitesmoke;
+
+}
+
+.lower-row{
+    margin-top: 40px;
+}
+#footer .footer-icons{
+    font-size: 60px;
+}
+
+#footer .footer-icons a{
+    color: #909090;
+    text-decoration: none;
+}
+#footer .footer-icons a:hover{
+    color: whitesmoke;
+}
+#footer .copyright h3{
+    color: #CED0CE;
+}
+/* end of footer  */
+/* media  */
+@media screen and (max-width:800px){
+    .banner-center h1{
+        font-size: 60px;
+    }
+}
+@media  screen and (max-width:576px){
+    #projects .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .item-1{
+        order: 1;
+    }
+    .item-2{
+        order: 2;
+    }
+    .item-3{
+        order: 4;
+    }
+    .item-4{
+        order: 3;
+    }
+    .item-5{
+        order: 5;
+    }
+    .item-6{
+        order: 6;
+    }
+}
+/* end media  */
